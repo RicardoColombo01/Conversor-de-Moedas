@@ -1,42 +1,55 @@
 body {
-  background-color: #222222;
-  color: white;
-  margin: 0px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  margin: 0;
+  background-color: #222;
+  color: white;
 }
 
+/* Contêiner principal */
+.container {
+  max-width: 400px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(145, 145, 145);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input e botões responsivos */
+input,
+select,
 button {
-  height: 40px;
-  width: 100px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #880000;
+}
+
+input {
+  width: 95.4%;
+}
+
+/* Botão bonito */
+button {
+  background-color: #007bff;
   color: white;
-  transform: translateX(50%); /* Ajusta para alinhar ao centro */
-  margin: 10px 40px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  opacity: 0.7;
+  background-color: #b30000;
 }
 
-p,
-label {
-  font-size: 20px;
-}
-
-input,
-select {
-  height: 30px;
-  width: 150px;
-  text-align: center;
-  font-size: 20px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 30px;
+/* Responsividade - Para telas maiores */
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
 }
