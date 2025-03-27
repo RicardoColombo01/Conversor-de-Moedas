@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas 💰</h1>
+        <br>
+        <br>
+        <br>
+        <label for="valor">Valor em Reais (R$):</label>
+        <input type="number" id="valor" placeholder="Digite o valor">
+
+        <label for="moeda">Converter para:</label>
+        <select id="moeda">
+            <option value="usd">Dólar (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="ars">Peso (ARS)</option>
+        </select>
+
+        <button onclick="converterMoeda()">Converter</button>
+
+        <h3>Valor Convertido:</h3>
+        <p id="resultado">--</p>
+    </div>
+
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
+</body>
+
+</html>
